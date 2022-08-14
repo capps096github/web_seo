@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Servelet Form</title>
+  </head>
+  <body>
+    <h1>Java Servelet Sample</h1>
+    
+    <p>Choose an option From the dropdown below</p>
+    
+    <!-- form -->
+    <form
+      action="add_comment.php?' . $user_code_and_assignment_id . '"
+      method="post"
+    >
+      <!-- drop down -->
+      <select
+        id="option"
+        name="options"
+        title="options"
+        onchange="this.form.submit()"
+      >
+        <option value="Create Session">Create Session</option>
+        <option value="Create Cookie">Create Cookie</option>
+        <option value="Check if Cookie Exists">Check if Cookie Exists</option>
+        <option value="Remove Session Variables">
+          Remove Session Variables
+        </option>
+        <option value="Show Cookies and Session Attributes">
+          Show Cookies and Session Attributes
+        </option>
+      </select>
+    </form>
+  </body>
+</html>
